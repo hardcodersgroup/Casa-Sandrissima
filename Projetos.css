@@ -1,0 +1,266 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: 'Segoe UI', sans-serif;
+   background-color: #f9f9f9;
+   color: #222;
+ }
+
+ .navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 40px;
+   background-color: white;
+   border-bottom: 1px solid #eee;
+ }
+
+ #p1 {
+   position: absolute;
+   margin-left: 90px;
+   font-weight: bold;
+   font-size: 22px;
+   color: #222;
+ }
+
+ .nav-links {
+   display: flex;
+   gap: 20px;
+   list-style: none;
+ }
+
+ .nav-links a {
+   text-decoration: none;
+   color: #333;
+   font-weight: 500;
+ }
+
+ .nav-buttons .btn {
+   margin-left: 15px;
+   padding: 10px 18px;
+   border-radius: 4px;
+   text-decoration: none;
+   font-weight: 500;
+ }
+
+ .btn.login {
+   border: 1px solid #1f40ff;
+   color: #1f40ff;
+ }
+
+ .inicio {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: linear-gradient(to right, #01d28e, #00c0a3);
+   color: white;
+   padding: 20px 40px;
+ }
+
+ .inicio-texto {
+   max-width: 60%;
+ }
+
+ .inicio-texto h1 {
+   font-size: 48px;
+   margin-bottom: 15px;
+ }
+
+ .inicio-texto p {
+   font-size: 18px;
+   margin-bottom: 30px;
+ }
+
+ .inicio-texto .btn.large {
+   font-size: 16px;
+   padding: 12px 24px;
+   color: white;
+   border-radius: 4px;
+   display: inline-block;
+   margin-bottom: 30px;
+ }
+
+ .image img {
+   max-height: 450px;
+   border-radius: 10px;
+ }
+
+ .menu-btn {
+   padding: 10px 20px;
+   color: white;
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   border-radius: 5px;
+   position: absolute;
+   padding-bottom: 40px;
+   top: 56%;
+   margin-left: 35px;
+ }
+
+ .menu {
+   display: none;
+   background-color: #f1f1f1;
+   padding: 15px;
+   width: 140px;
+   position: absolute;
+   top: 70%;
+   left: 20px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+ }
+
+ .img {
+   position: absolute;
+ }
+
+ .menu a {
+   display: block;
+   padding: 10px 0;
+   color: #333;
+   text-decoration: none;
+ }
+
+ .menu a:hover {
+   background-color: #ddd;
+ }
+
+ .projetos {
+   max-width: 70%;
+   margin-left: 200px;
+   line-height: 1.4;
+   font-family: montserrat, sans-serif;
+   color: rgb(46, 46, 46);
+   opacity: 75%;
+ }
+
+ .karate {
+   max-width: 70%;
+   margin-left: 200px;
+   line-height: 1.4;
+   font-family: montserrat, sans-serif;
+   color: rgb(46, 46, 46);
+   opacity: 75%;
+ }
+
+ .karate h2 {
+   color: rgb(184, 184, 0);
+ }
+
+ .Imagem-Karate {
+   float: right;
+   margin-left: 15px;
+   width: 250px;
+   border-radius: 8px;
+ }
+
+ .ingles {
+   max-width: 70%;
+   margin-left: 200px;
+   line-height: 1.4;
+   font-family: montserrat, sans-serif;
+   color: rgb(46, 46, 46);
+   opacity: 75%;
+ }
+
+ .ingles h2 {
+   color: rgb(0, 0, 160);
+ }
+
+ .Imagem-Ingles {
+   float: right;
+   margin-left: 15px;
+   width: 250px;
+   border-radius: 8px;
+ }
+
+ .costura {
+   max-width: 70%;
+   margin-left: 200px;
+   line-height: 1.4;
+   font-family: montserrat, sans-serif;
+   color: rgb(46, 46, 46);
+   opacity: 75%;
+ }
+
+ .Imagem-Costura {
+   float: right;
+   margin-left: 15px;
+   width: 250px;
+   border-radius: 8px;
+ }
+
+ .costura h2 {
+   color: rgb(207, 24, 24);
+ }
+
+ .footer {
+   background: linear-gradient(to right, #01d28e, #00c0a3);
+   color: #333;
+   padding: 40px 20px;
+   font-family: Arial, sans-serif;
+ }
+
+ .footer-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-width: 1100px;
+   margin-left: 320px;
+ }
+
+ .footer-selecao {
+   flex: 1 1 250px;
+   margin: 10px;
+ }
+
+ .footer-selecao h3 {
+   margin-bottom: 10px;
+   font-size: 18px;
+   color: #111;
+ }
+
+ .footer-selecao p {
+   margin: 5px 0;
+   font-size: 14px;
+   color: #ffffff;
+ }
+
+ .social-links {
+   display: flex;
+   gap: 15px;
+   align-items: center;
+ }
+
+ .social-links img {
+   width: 28px;
+   height: 28px;
+   filter: grayscale(1);
+   transition: all 0.3s ease;
+ }
+
+ .social-links img:hover {
+   filter: none;
+   transform: scale(1.1);
+ }
+
+ .footer-bottom {
+   text-align: center;
+   border-top: 1px solid #ddd;
+   margin-top: 30px;
+   padding-top: 15px;
+   font-size: 13px;
+   color: #ffffff;
+ }
+
+ @media (max-width: 700px) {
+   .footer-container {
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+   }
+ }

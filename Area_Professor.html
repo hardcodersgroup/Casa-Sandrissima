@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Sandríssima</title>
+    <link rel="stylesheet" href="Area_Professor.css">
+    <link rel="shortcut icon" href="IMAGENS/LogoSF.png" type="image/x-icon">
+    <script src="Area_Professor.js"></script>
+
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo"><img src="IMAGENS/LogoIN.png" alt="Casa Sandríssima - logo" height="40" width="65">
+        </div>
+        <p id="p1">Casa Sandríssima</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Associacao.html">A associação</a></li>
+                <li><a href="Doação.html">Doações</a></li>
+                <li><a href="Projetos.html">Projetos</a></li>
+                <li><a href="Area_Professor.html">Área de Associados</a></li>
+            </ul>
+        </nav>
+        <div class="nav-buttons">
+            <a href="#" class="btn login">Login</a>
+        </div>
+    </header>
+
+    <main class="inicio">
+        <div class="inicio-texto">
+            <h1>Casa Sandríssima</h1>
+            <p style="font-family: Georgia; font-size: 20px"> imensidão de de uma semente, semear dignidade, cultivar
+                inclusão, florescer em comunidade.</p>
+            <div class="conversion-box">
+                <p>A Casa Sandríssima é uma organização comunitária que busca melhorar a qualidade de vida de famílias
+                    em situação de risco e vulnerabilidade social. Seu trabalho é baseado na educação popular, no
+                    fortalecimento de vínculos familiares e no respeito à diversidade.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="IMAGENS/LogoSF.png" alt="Casa Sandríssima - logo" height="240" width="180">
+        </div>
+    </main>
+
+
+    <div class="container">
+        <button onclick="abrirLogin('Professor')"> <img src="IMAGENS/Icone_Professor.png" alt="Icone Professor" height="50px"
+                width="50x"><br>Área do Professor</button>
+   <!--     <button onclick="abrirLogin('Aluno')"> <img src="Icone_Aluno.png" alt="Icone Professor" height="50px"
+                width="50x"><br>Área do Aluno</button> -->
+    </div>
+
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <h2 id="modalTitulo">Login</h2>
+            <input type="text" id="usuario" placeholder="Usuário"><br>
+            <input type="password" id="senha" placeholder="Senha"><br>
+            <button onclick="fazerLogin()">Entrar</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-selecao">
+                <h3>Contato</h3>
+                <p>📞 (16) 99277-4601</p>
+                <p>✉️ casasandrissima@gmail.com</p>
+            </div>
+
+            <div class="footer-selecao">
+                <h3>Localização</h3>
+                <p>Rua Filomena Ana Rita, 390<br>Jardim Ipanema<br>Franca - SP, Brasil</p>
+            </div>
+
+            <div class="footer-selecao">
+                <h3>Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="https://wa.me/5516992774601" target="_blank" aria-label="WhatsApp">
+                        <img src="IMAGENS/img_whatsapp.svg" alt="WhatsApp">
+                    </a>
+                    <a href="https://www.instagram.com/casasandrissima?igsh=MXV3OHl1ZHo4NWR0ZA==" target="_blank"
+                        aria-label="Instagram">
+                        <img src="IMAGENS/img_instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/seuperfil" target="_blank" aria-label="Facebook">
+                        <img src="IMAGENS/img_facebook.svg" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="year"></span>Casa Sandríssima. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
